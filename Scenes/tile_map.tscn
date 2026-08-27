@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dbfx0tr4je5ih"]
+
+[ext_resource type="PackedScene" uid="uid://byyp64d88hn14" path="res://Scenes/base_tile_map_layer.tscn" id="1_1br53"]
+[ext_resource type="PackedScene" uid="uid://cy8geijg0f8su" path="res://Scenes/tile_map_layer.tscn" id="2_drmie"]
+
+[node name="TileMap" type="TileMap" unique_id=1946099256]
+format = 2
+
+[node name="TileMapLayer" parent="." unique_id=770576467 instance=ExtResource("1_1br53")]
+
+[node name="TileMapLayer2" parent="." unique_id=457940142 instance=ExtResource("2_drmie")]
