@@ -281,3 +281,13 @@ flip_h = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1276604542]
 polygon = PackedVector2Array(-4, -8, 0, -9, 5, -5, 5, -1, 2, 1, 4, 4, 0, 9, -5, 8, -4, 6, -4, 4, -2, 1, -6, -2)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=764941186]
+zoom = Vector2(2, 2)
+process_callback = 0
+limit_left = -400
+limit_top = -300
+limit_right = 500
+limit_bottom = 300
+limit_smoothed = true
+position_smoothing_enabled = true
