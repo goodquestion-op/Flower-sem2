@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 
 const SPEED = 100.0
+
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 
@@ -12,6 +13,8 @@ func _physics_process(delta: float) -> void:
 
 func process_movment() -> void:
 	var direction := Input.get_vector("left","right","up","down")
+	
+	var last_direction = direction
 	
 	velocity = direction * SPEED
 	process_animation(direction)

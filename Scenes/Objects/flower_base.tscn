@@ -1,18 +1,21 @@
 [gd_scene format=3 uid="uid://cx5rhkns8gp22"]
 
+[ext_resource type="Script" uid="uid://8phoba2bh7ad" path="res://Harvest_OBJ.gd" id="1_2oh73"]
 [ext_resource type="Texture2D" uid="uid://bhjcvx6vgsg0b" path="res://assets/images/Flowers/image (1).png" id="1_cx66o"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ulpdw"]
-radius = 3.0000005
-height = 10.000001
+radius = 2.0056865
+height = 8.0
 
 [node name="Flower base" type="StaticBody2D" unique_id=958469617]
 scale = Vector2(0.99999994, 1)
+script = ExtResource("1_2oh73")
 
 [node name="Flower1" type="Sprite2D" parent="." unique_id=1736437785]
 scale = Vector2(0.23863623, 0.20535687)
 texture = ExtResource("1_cx66o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=357405205]
-position = Vector2(-1.0000001, 0)
+position = Vector2(-1.0000001, 4)
+scale = Vector2(1.4957473, 0.105538554)
 shape = SubResource("CapsuleShape2D_ulpdw")
