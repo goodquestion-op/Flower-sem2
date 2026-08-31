@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cxqhu3nbcqudp"]
+
+[node name="HUD" type="CanvasGroup" unique_id=966273918]
+
+[node name="Label" type="Label" parent="." unique_id=1204689337]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Plain flowers:"

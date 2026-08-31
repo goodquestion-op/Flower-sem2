@@ -5,6 +5,7 @@ const SPEED = 100.0
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
+var last_direction: Vector2 = Vector2.RIGHT
 
 func _physics_process(delta: float) -> void:
 	process_movment()
@@ -14,19 +15,22 @@ func _physics_process(delta: float) -> void:
 func process_movment() -> void:
 	var direction := Input.get_vector("left","right","up","down")
 	
-	var last_direction = direction
 	
-	velocity = direction * SPEED
-	process_animation(direction)
+	if direction != Vector2.ZERO:
+		velocity = direction * SPEED
+		last_direction = direction
+	else: 
+		velocity = Vector2.ZERO
+	process_animation(last_direction)
 	
 	#run or idle logic
-func process_animation(direction) -> void:
+func process_animation(last_direction) -> void:
 	if velocity != Vector2.ZERO:
-		play_animation("Walk",direction)
+		play_animation("Walk",last_direction)
 		#print(velocity)
 		#print_rich("Walk")
 	elif velocity == Vector2.ZERO:
-		play_animation("Idle",direction)
+		play_animation("Idle",last_direction)
 		#print(velocity)
 		#print("Idle")
 	

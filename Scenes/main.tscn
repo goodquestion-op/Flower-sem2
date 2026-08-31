@@ -149,6 +149,7 @@ tile_map_data = PackedByteArray("AAAKAAgAAAACAAIAAAALAAcAAAADAAEAAAALAAgAAAADAAI
 tile_set = SubResource("TileSet_u4ham")
 
 [node name="Player" parent="." unique_id=970306741 instance=ExtResource("1_jjgbg")]
+top_level = true
 position = Vector2(189, 122)
 
 [node name="Flower base2" parent="." unique_id=958469617 instance=ExtResource("5_kry3j")]
