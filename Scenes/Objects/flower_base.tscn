@@ -7,15 +7,27 @@
 radius = 2.0056865
 height = 8.0
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0xqxx"]
+radius = 1.93033
+height = 23.469093
+
 [node name="Flower base" type="StaticBody2D" unique_id=958469617]
 scale = Vector2(0.99999994, 1)
 script = ExtResource("1_2oh73")
-
-[node name="Flower1" type="Sprite2D" parent="." unique_id=1736437785]
-scale = Vector2(0.23863623, 0.20535687)
-texture = ExtResource("1_cx66o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=357405205]
 position = Vector2(-1.0000001, 4)
 scale = Vector2(1.4957473, 0.105538554)
 shape = SubResource("CapsuleShape2D_ulpdw")
+
+[node name="Flower1" type="Sprite2D" parent="." unique_id=1736437785]
+scale = Vector2(0.23863623, 0.20535687)
+texture = ExtResource("1_cx66o")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1496522212]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1916041584]
+position = Vector2(-1, 4)
+rotation = -0.017453292
+scale = Vector2(-1.5539019, 0.04128541)
+shape = SubResource("CapsuleShape2D_0xqxx")

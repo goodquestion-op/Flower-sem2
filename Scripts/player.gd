@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 100.0
+const SPEED = 70.0
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
@@ -46,3 +46,7 @@ func play_animation(prefix: String,dir: Vector2) -> void:
 		animated_sprite_2d.play(prefix +"_Up")
 	
 	
+
+
+func _on_area_2d_mouse_entered() -> void:
+	pass # Replace with function body.
