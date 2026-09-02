@@ -154,6 +154,3 @@ position = Vector2(189, 122)
 [node name="Flower base2" parent="." unique_id=958469617 instance=ExtResource("5_kry3j")]
 position = Vector2(288, 137)
 scale = Vector2(0.9999999, 1)
-
-[node name="Flower base" parent="." unique_id=1817458273 instance=ExtResource("5_kry3j")]
-position = Vector2(268, 133)

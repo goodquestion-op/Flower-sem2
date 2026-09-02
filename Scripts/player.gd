@@ -3,6 +3,8 @@ extends CharacterBody2D
 
 const SPEED = 70.0
 
+var last_direction: Vector2
+
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 
@@ -12,21 +14,29 @@ func _physics_process(delta: float) -> void:
 	
 
 func process_movment() -> void:
+	
+	
 	var direction := Input.get_vector("left","right","up","down")
 	
-	var last_direction = direction
 	
+	if (direction != Vector2.ZERO):
+		last_direction = direction
+		
+	
+	process_animation(last_direction)
 	velocity = direction * SPEED
-	process_animation(direction)
+	
+	
+	
 	
 	#run or idle logic
-func process_animation(direction) -> void:
+func process_animation(last_direction) -> void:
 	if velocity != Vector2.ZERO:
-		play_animation("Walk",direction)
+		play_animation("Walk",last_direction)
 		#print(velocity)
 		#print_rich("Walk")
 	elif velocity == Vector2.ZERO:
-		play_animation("Idle",direction)
+		play_animation("Idle",last_direction)
 		#print(velocity)
 		#print("Idle")
 	

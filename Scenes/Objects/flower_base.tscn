@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://8phoba2bh7ad" path="res://Harvest_OBJ.gd" id="1_2oh73"]
 [ext_resource type="Texture2D" uid="uid://bhjcvx6vgsg0b" path="res://assets/images/Flowers/image (1).png" id="1_cx66o"]
+[ext_resource type="Script" uid="uid://dlofbw6c2moos" path="res://Scenes/Objects/flower_base.gd" id="3_alcsp"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ulpdw"]
 radius = 2.0056865
@@ -10,6 +11,10 @@ height = 8.0
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0xqxx"]
 radius = 1.93033
 height = 23.469093
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jk34k"]
+radius = 2.0
+height = 6.0
 
 [node name="Flower base" type="StaticBody2D" unique_id=958469617]
 scale = Vector2(0.99999994, 1)
@@ -21,7 +26,7 @@ scale = Vector2(1.4957473, 0.105538554)
 shape = SubResource("CapsuleShape2D_ulpdw")
 
 [node name="Flower1" type="Sprite2D" parent="." unique_id=1736437785]
-scale = Vector2(0.23863623, 0.20535687)
+scale = Vector2(0.23863626, 0.20535687)
 texture = ExtResource("1_cx66o")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1496522212]
@@ -31,3 +36,19 @@ position = Vector2(-1, 4)
 rotation = -0.017453292
 scale = Vector2(-1.5539019, 0.04128541)
 shape = SubResource("CapsuleShape2D_0xqxx")
+
+[node name="test" type="Node2D" parent="." unique_id=198187484]
+visible = false
+script = ExtResource("3_alcsp")
+
+[node name="Area2D" type="Area2D" parent="test" unique_id=1947080044]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="test/Area2D" unique_id=1021493220]
+visible = false
+position = Vector2(-0.5, 4)
+scale = Vector2(1.4082377, -0.4744452)
+shape = SubResource("CapsuleShape2D_jk34k")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
