@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cx5rhkns8gp22"]
 
-[ext_resource type="Script" uid="uid://8phoba2bh7ad" path="res://Harvest_OBJ.gd" id="1_2oh73"]
+[ext_resource type="Script" uid="uid://8phoba2bh7ad" path="res://Scripts/Harvest_OBJ.gd" id="1_2oh73"]
 [ext_resource type="Texture2D" uid="uid://bhjcvx6vgsg0b" path="res://assets/images/Flowers/image (1).png" id="1_cx66o"]
 [ext_resource type="Script" uid="uid://dlofbw6c2moos" path="res://Scenes/Objects/flower_base.gd" id="3_alcsp"]
 

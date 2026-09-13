@@ -1,7 +1,7 @@
 extends Node2D
 
 
-class_name Flower
+#class_name Flower
 
 @export var starting_resources : int = 1
 var harvestable = false 

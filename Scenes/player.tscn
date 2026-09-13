@@ -282,18 +282,7 @@ script = ExtResource("1_6t5aa")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1697425490]
 sprite_frames = SubResource("SpriteFrames_jk34k")
 animation = &"Walk_Left"
-frame_progress = 0.79918224
 flip_h = true
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=764941186]
-zoom = Vector2(2, 2)
-process_callback = 0
-limit_left = -400
-limit_top = -300
-limit_right = 500
-limit_bottom = 300
-limit_smoothed = true
-position_smoothing_enabled = true
 
 [node name="Interaction" type="Node2D" parent="." unique_id=679908758]
 script = ExtResource("4_fkybt")
@@ -306,6 +295,16 @@ shape = SubResource("CircleShape2D_u4ham")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=297588531]
 position = Vector2(-1, 7)
 shape = SubResource("RectangleShape2D_jk34k")
+
+[node name="Camera2D2" type="Camera2D" parent="." unique_id=1596188670]
+zoom = Vector2(2, 2)
+process_callback = 0
+limit_left = -400
+limit_top = -300
+limit_right = 500
+limit_bottom = 300
+limit_smoothed = true
+position_smoothing_enabled = true
 
 [connection signal="body_entered" from="Interaction/Area2D" to="Interaction" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Interaction/Area2D" to="Interaction" method="_on_area_2d_body_exited"]

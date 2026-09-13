@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-#class_name Flower
+class_name Flower
 
 var harvestable = false 
 

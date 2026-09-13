@@ -47,7 +47,7 @@ func play_animation(prefix: String,dir: Vector2) -> void:
 		animated_sprite_2d.play(prefix +"_Right")
 		
 	#elif dir.x < 0:
-	#	animated_sprite_2d.play(prefix +"_Left")
+		#animated_sprite_2d.play("Walk_Forward")
 		
 	elif dir.y >= 0:
 		animated_sprite_2d.play(prefix +"_Forward")
