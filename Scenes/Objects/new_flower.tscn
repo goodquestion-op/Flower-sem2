@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://blk60tu0ubjsv"]
+
+[ext_resource type="Texture2D" uid="uid://bhjcvx6vgsg0b" path="res://assets/images/Flowers/image (1).png" id="1_8pxy0"]
+[ext_resource type="Script" uid="uid://d22nhevli0toj" path="res://Scenes/Objects/interaction_flower.gd" id="2_wt870"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aphcb"]
+size = Vector2(7.5000014, 2.5000014)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jk34k"]
+size = Vector2(117.1875, 39.875004)
+
+[node name="New flower" type="Node2D" unique_id=1408480046]
+scale = Vector2(0.4, 0.4)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1548263682]
+scale = Vector2(0.285, 0.285)
+texture = ExtResource("1_8pxy0")
+
+[node name="interaction_flower" type="Node2D" parent="." unique_id=2005691558]
+scale = Vector2(0.4, 0.4)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=582247476]
+script = ExtResource("2_wt870")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=966557133]
+position = Vector2(-1.2499995, 4.9999967)
+scale = Vector2(0.99999964, 0.99999964)
+shape = SubResource("RectangleShape2D_aphcb")
+
+[node name="Area2D" type="Area2D" parent="StaticBody2D" unique_id=510250630]
+scale = Vector2(0.16, 0.16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Area2D" unique_id=1300982228]
+position = Vector2(4.7683716e-07, 31.25)
+scale = Vector2(0.4, 0.4)
+shape = SubResource("RectangleShape2D_jk34k")
+
+[connection signal="body_entered" from="StaticBody2D/Area2D" to="interaction_flower" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="StaticBody2D/Area2D" to="interaction_flower" method="_on_area_2d_body_exited"]

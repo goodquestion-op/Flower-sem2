@@ -1,6 +1,7 @@
-extends StaticBody2D
+extends Node2D
 
-class_name Flower
+
+class_name Flower_2
 @onready var hitBox : Area2D = $Area2D
 var harvestable = false 
 
@@ -25,11 +26,11 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 	if (body is Harvester):
 		harvestable = false 
 		print("harvestable ="+harvestable)
-	pass # Replace with function body.
+	 
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if (body is Harvester):
 		harvestable = true 
 		print("harvestable ="+harvestable)
-	pass # Replace with function body.
+	

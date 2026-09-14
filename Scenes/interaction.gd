@@ -11,13 +11,13 @@ func _input(event: InputEvent) -> void:
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if(body is Flower):
-		print("leaving")
+		print("leaving Flower")
+	elif(body is Flower_2):
+		print("Leaving Flower_2" )
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if(body is Flower):
-		print("entering")
-
-	 # Replace with function body.
-
-			
+		print("entering Flower" )
+	elif(body is Flower_2):
+		print("entering Flower_2" )

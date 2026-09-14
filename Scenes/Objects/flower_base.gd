@@ -2,6 +2,7 @@ extends Node2D
 
 
 #class_name Flower
+@onready var hitBox : Area2D = $Area2D
 
 @export var starting_resources : int = 1
 var harvestable = false 

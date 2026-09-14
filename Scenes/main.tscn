@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://q76cst8tenyu" path="res://assets/images/TileMap/Farm_Craft_A2_DEMO.png" id="2_jjvhh"]
 [ext_resource type="Texture2D" uid="uid://d2xftshpuk3hi" path="res://assets/images/TileMap/Farm_Craft_B_DEMO.png" id="3_kry3j"]
 [ext_resource type="PackedScene" uid="uid://cx5rhkns8gp22" path="res://Scenes/Objects/flower_base.tscn" id="5_kry3j"]
+[ext_resource type="PackedScene" uid="uid://blk60tu0ubjsv" path="res://Scenes/Objects/new_flower.tscn" id="6_21xkr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6bp64"]
 texture = ExtResource("3_kry3j")
@@ -154,3 +155,8 @@ position = Vector2(189, 122)
 [node name="Flower base2" parent="." unique_id=958469617 instance=ExtResource("5_kry3j")]
 position = Vector2(288, 137)
 scale = Vector2(0.9999999, 1)
+
+[node name="New flower" parent="." unique_id=1408480046 instance=ExtResource("6_21xkr")]
+y_sort_enabled = true
+position = Vector2(148, 159)
+scale = Vector2(1, 1)

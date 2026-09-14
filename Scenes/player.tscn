@@ -284,15 +284,15 @@ sprite_frames = SubResource("SpriteFrames_jk34k")
 animation = &"Walk_Left"
 flip_h = true
 
-[node name="Interaction" type="Node2D" parent="." unique_id=679908758]
+[node name="Interaction_flower" type="Node2D" parent="." unique_id=679908758]
 script = ExtResource("4_fkybt")
 
-[node name="Area2D" type="Area2D" parent="Interaction" unique_id=636499491]
+[node name="Area2D" type="Area2D" parent="Interaction_flower" unique_id=636499491]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Interaction/Area2D" unique_id=1245979025]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interaction_flower/Area2D" unique_id=1245979025]
 shape = SubResource("CircleShape2D_u4ham")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=297588531]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=297588531]
 position = Vector2(-1, 7)
 shape = SubResource("RectangleShape2D_jk34k")
 
@@ -306,5 +306,5 @@ limit_bottom = 300
 limit_smoothed = true
 position_smoothing_enabled = true
 
-[connection signal="body_entered" from="Interaction/Area2D" to="Interaction" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Interaction/Area2D" to="Interaction" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Interaction_flower/Area2D" to="Interaction_flower" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Interaction_flower/Area2D" to="Interaction_flower" method="_on_area_2d_body_exited"]
