@@ -160,3 +160,13 @@ scale = Vector2(0.9999999, 1)
 y_sort_enabled = true
 position = Vector2(148, 159)
 scale = Vector2(1, 1)
+
+[node name="New flower2" parent="." unique_id=77257322 instance=ExtResource("6_21xkr")]
+y_sort_enabled = true
+position = Vector2(242, 171)
+scale = Vector2(1, 1)
+
+[node name="New flower3" parent="." unique_id=1930191047 instance=ExtResource("6_21xkr")]
+y_sort_enabled = true
+position = Vector2(238, 78)
+scale = Vector2(1, 1)
