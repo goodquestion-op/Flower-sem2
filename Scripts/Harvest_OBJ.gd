@@ -9,6 +9,7 @@ var harvestable = false
 var current_resources  : int :
 	set (value):
 		if(value <= 0):
+			print("dead")
 			queue_free() 
 
 func _ready() -> void:

@@ -12,14 +12,8 @@ size = Vector2(117.1875, 39.875004)
 [node name="New flower" type="Node2D" unique_id=1408480046]
 scale = Vector2(0.4, 0.4)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1548263682]
-scale = Vector2(0.285, 0.285)
-texture = ExtResource("1_8pxy0")
-
-[node name="interaction_flower" type="Node2D" parent="." unique_id=2005691558]
-scale = Vector2(0.4, 0.4)
-
 [node name="New Flower" type="StaticBody2D" parent="." unique_id=582247476]
+scale = Vector2(0.99999994, 0.99999994)
 script = ExtResource("2_wt870")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="New Flower" unique_id=966557133]
@@ -34,6 +28,13 @@ scale = Vector2(0.16, 0.16)
 position = Vector2(4.7683716e-07, 31.25)
 scale = Vector2(0.4, 0.4)
 shape = SubResource("RectangleShape2D_jk34k")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1548263682]
+scale = Vector2(0.285, 0.285)
+texture = ExtResource("1_8pxy0")
+
+[node name="interaction_flower" type="Node2D" parent="." unique_id=2005691558]
+scale = Vector2(0.4, 0.4)
 
 [connection signal="body_entered" from="New Flower/Area2D" to="interaction_flower" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="New Flower/Area2D" to="interaction_flower" method="_on_area_2d_body_exited"]
