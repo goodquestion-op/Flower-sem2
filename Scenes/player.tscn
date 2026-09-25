@@ -271,7 +271,9 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_u4ham"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wt870"]
+radius = 7.0
+height = 24.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jk34k"]
 size = Vector2(6, 6)
@@ -290,7 +292,8 @@ script = ExtResource("4_fkybt")
 [node name="Area2D" type="Area2D" parent="Interaction_flower" unique_id=636499491]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interaction_flower/Area2D" unique_id=1245979025]
-shape = SubResource("CircleShape2D_u4ham")
+position = Vector2(-1, 0)
+shape = SubResource("CapsuleShape2D_wt870")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=297588531]
 position = Vector2(-1, 7)

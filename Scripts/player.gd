@@ -4,11 +4,11 @@ extends CharacterBody2D
 const SPEED = 70.0
 
 var last_direction: Vector2
-
+#var harvestable = true
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	process_movment()
 	move_and_slide()
 	
@@ -30,7 +30,7 @@ func process_movment() -> void:
 	
 	
 	#run or idle logic
-func process_animation(last_direction) -> void:
+func process_animation(_direction) -> void:
 	if velocity != Vector2.ZERO:
 		play_animation("Walk",last_direction)
 		#print(velocity)
