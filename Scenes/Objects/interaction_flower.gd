@@ -34,6 +34,7 @@ func _input(event: InputEvent) -> void:
 
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
+	print("leave")
 	if (body is Harvester):
 		harvestable = false 
 		#print("harvestable ="+harvestable)
@@ -41,6 +42,7 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
+	print("hi")
 	if (body is Harvester):
 		harvestable = true 
 		#print("harvestable ="+harvestable)
