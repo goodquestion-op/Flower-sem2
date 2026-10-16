@@ -7,6 +7,8 @@ var last_direction: Vector2
 #var harvestable = true
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
+@export var inv: Inv 
+
 
 func _physics_process(_delta: float) -> void:
 	process_movment()

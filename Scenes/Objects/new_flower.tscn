@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://blk60tu0ubjsv"]
 
 [ext_resource type="Texture2D" uid="uid://bhjcvx6vgsg0b" path="res://assets/images/Flowers/image (1).png" id="1_8pxy0"]
-[ext_resource type="Script" uid="uid://d22nhevli0toj" path="res://Scenes/Objects/interaction_flower.gd" id="2_wt870"]
+[ext_resource type="Script" uid="uid://d22nhevli0toj" path="res://Scripts/interaction_flower.gd" id="2_wt870"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aphcb"]
 size = Vector2(7.5000014, 2.5000014)
@@ -9,7 +9,7 @@ size = Vector2(7.5000014, 2.5000014)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jk34k"]
 size = Vector2(152.34375, 140.62502)
 
-[node name="New Flower" type="StaticBody2D" unique_id=582247476]
+[node name="New Flower" type="CharacterBody2D" unique_id=796860694]
 scale = Vector2(0.99999994, 0.99999994)
 script = ExtResource("2_wt870")
 
@@ -29,3 +29,6 @@ scale = Vector2(0.16, 0.16)
 position = Vector2(-7.0312505, 21.875002)
 scale = Vector2(0.4, 0.4)
 shape = SubResource("RectangleShape2D_jk34k")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]

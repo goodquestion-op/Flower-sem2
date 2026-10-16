@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b8ktpwija130b"]
+
+[ext_resource type="Script" uid="uid://dj7jm3tik3gmb" path="res://Inventory/Inv_UI.gd" id="1_i31qc"]
+
+[node name="Inv_UI" type="Control" unique_id=1536284361]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_i31qc")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1107142557]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
