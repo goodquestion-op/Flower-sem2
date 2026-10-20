@@ -58,7 +58,3 @@ func play_animation(prefix: String,dir: Vector2) -> void:
 		animated_sprite_2d.play(prefix +"_Up")
 	
 	
-
-
-func _on_area_2d_mouse_entered() -> void:
-	pass # Replace with function body.

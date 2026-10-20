@@ -25,3 +25,4 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if "New flower" in BODY:
 		#print("Touching Flower :) ")
 		harvestable = true
+		
