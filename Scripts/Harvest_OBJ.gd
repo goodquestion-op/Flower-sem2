@@ -1,12 +1,15 @@
 extends StaticBody2D
 
-class_name Flower
+#class_name Flower
+@onready var hitBox : Area2D = $Area2D
+var harvestable = false 
 
 @export var starting_resources : int = 1
 
 var current_resources  : int :
 	set (value):
 		if(value <= 0):
+			print("dead")
 			queue_free() 
 
 func _ready() -> void:
@@ -14,3 +17,20 @@ func _ready() -> void:
 func harvest(amount: int):
 	current_resources -= amount #think this is redundent for me
 	pass
+
+
+
+
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	if (body is Harvester):
+		harvestable = false 
+		print("harvestable ="+harvestable)
+	pass # Replace with function body.
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if (body is Harvester):
+		harvestable = true 
+		print("harvestable ="+harvestable)
+	pass # Replace with function body.

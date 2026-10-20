@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://04cox0lt18d4"
-path="res://.godot/imported/Idle - Copy.png-14afd7c076a336db22b8a6b0257af391.ctex"
+uid="uid://dv1typiog0v2t"
+path="res://.godot/imported/inventory-background.png-7cf1b1a151c297dc9facb85bdb7b4e92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/Player/Idle - Copy.png"
-dest_files=["res://.godot/imported/Idle - Copy.png-14afd7c076a336db22b8a6b0257af391.ctex"]
+source_file="res://assets/images/Inv_assets/inventory-background.png"
+dest_files=["res://.godot/imported/inventory-background.png-7cf1b1a151c297dc9facb85bdb7b4e92.ctex"]
 
 [params]
 
