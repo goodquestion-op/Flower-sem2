@@ -57,4 +57,5 @@ func play_animation(prefix: String,dir: Vector2) -> void:
 	elif dir.y <= 0:
 		animated_sprite_2d.play(prefix +"_Up")
 	
-	
+func collect(item):
+	inv.insert(item)

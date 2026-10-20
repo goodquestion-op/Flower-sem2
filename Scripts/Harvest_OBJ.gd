@@ -5,7 +5,7 @@ extends StaticBody2D
 var harvestable = false 
 
 @export var starting_resources : int = 1
-
+@export var item: InvItem
 var current_resources  : int :
 	set (value):
 		if(value <= 0):

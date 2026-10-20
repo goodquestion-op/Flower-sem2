@@ -2,7 +2,7 @@ extends Node2D
 class_name Harvester
 
 
-@onready var hitBox : Area2D = $Area2D
+@onready var hitBox : Area2D = $Interactio_Area
 var harvestable = false
 var BODY : String
 

@@ -6,12 +6,16 @@ class_name Flower_2
 var harvestable = false 
 var body : String
 @export var starting_resources : int = 1
+@export var item: InvItem
+var player = null
 
 
 
 var current_resources  : int :
 	set (value):
 		if(value <= 0):
+			print("Collecting")
+			player.collect(item)
 			queue_free() 
 
 func _ready() -> void:

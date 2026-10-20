@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://blk60tu0ubjsv"]
 
 [ext_resource type="Texture2D" uid="uid://bhjcvx6vgsg0b" path="res://assets/images/Flowers/image (1).png" id="1_8pxy0"]
+[ext_resource type="Resource" uid="uid://b7j31rdgdyo5g" path="res://Inventory/Items/Flower_Inv.tres" id="2_ta6tm"]
 [ext_resource type="Script" uid="uid://d22nhevli0toj" path="res://Scripts/interaction_flower.gd" id="2_wt870"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aphcb"]
@@ -12,6 +13,7 @@ size = Vector2(152.34375, 140.62502)
 [node name="New Flower" type="CharacterBody2D" unique_id=796860694]
 scale = Vector2(0.99999994, 0.99999994)
 script = ExtResource("2_wt870")
+item = ExtResource("2_ta6tm")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1548263682]
 scale = Vector2(0.285, 0.285)
