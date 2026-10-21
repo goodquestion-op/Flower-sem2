@@ -3,8 +3,8 @@ extends Panel
 @onready var item_visual: Sprite2D = $CenterContainer/Panel/Item_display
 
 func update(slot: InvSlot):
-	if !slot:
+	if !slot or !slot.item:
 		item_visual.visible = false
 	else:
 		item_visual.visible = true
-		item_visual.texture = slot.texture
+		item_visual.texture = slot.item.texture
