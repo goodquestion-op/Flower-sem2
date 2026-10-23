@@ -58,4 +58,5 @@ func play_animation(prefix: String,dir: Vector2) -> void:
 		animated_sprite_2d.play(prefix +"_Up")
 	
 func collect(item):
+	print("collecting: ",item)
 	inv.insert(item)

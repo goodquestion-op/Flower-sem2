@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://blk60tu0ubjsv"]
 
 [ext_resource type="Texture2D" uid="uid://bhjcvx6vgsg0b" path="res://assets/images/Flowers/image (1).png" id="1_8pxy0"]
-[ext_resource type="Resource" uid="uid://b7j31rdgdyo5g" path="res://Inventory/Items/Flower_Inv.tres" id="2_ta6tm"]
+[ext_resource type="Resource" uid="uid://bjuk7cxskdguv" path="res://Inventory/Items/flower_mark2.tres" id="2_ta6tm"]
 [ext_resource type="Script" uid="uid://d22nhevli0toj" path="res://Scripts/interaction_flower.gd" id="2_wt870"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aphcb"]
@@ -34,3 +34,4 @@ shape = SubResource("RectangleShape2D_jk34k")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
