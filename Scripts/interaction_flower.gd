@@ -30,6 +30,7 @@ func _input(event: InputEvent) -> void:
 		if (harvestable == true):
 			print("harvesting: ",item)
 			player.collect(item)
+			await(3) 
 			queue_free()
 			
 			pass	 

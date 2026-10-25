@@ -12,4 +12,4 @@ func update(slot: InvSlot):
 		item_visual.visible = true
 		amount_text.visible = true
 		item_visual.texture = slot.item.texture
-		#amount_text.visible = str(slot.amount)
+		amount_text.text = str(slot.amount)
