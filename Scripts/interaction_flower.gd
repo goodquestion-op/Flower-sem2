@@ -1,43 +1,41 @@
-extends Node2D
+extends CharacterBody2D
 
 
 class_name Flower_2
 @onready var hitBox : Area2D = $Area2D
+@onready var Help_text: Label = $Label
 var harvestable = false 
 var Areabody : String
-@export var starting_resources : int = 1
 @export var item: InvItem
 var player : Node2D
 
 
 
-var current_resources  : int :
-	set (value):
-		if(value <= 0):
-			print("Collecting: ",item)
-			player.collect(item)
-			queue_free() 
+
 
 func _ready() -> void:
-	current_resources = starting_resources
+	Help_text.visible = false
 	
-func harvest(amount: int):
-	current_resources -= amount #think this is redundent for me
-	pass
+
 		
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("harvest"):
 		if (harvestable == true):
 			print("harvesting: ",item)
 			player.collect(item)
-			await(3) 
+			await(4) 
 			queue_free()
 			
 			pass	 
 
 
 
-
+func _process(delta: float) -> void:
+	if harvestable == true:
+		Help_text.visible = true
+	else:
+		Help_text.visible = false
+		
 	 
 	
 

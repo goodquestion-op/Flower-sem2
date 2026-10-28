@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://63250qdnrc47"]
+
+[ext_resource type="Script" uid="uid://dqdvfi4wjyul0" path="res://Scenes/flower_spawing.gd" id="1_3mvc4"]
+
+[node name="Flower Spawing" type="Node2D" unique_id=316677513]
+script = ExtResource("1_3mvc4")

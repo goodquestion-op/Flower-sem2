@@ -4,7 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://byyp64d88hn14" path="res://Scenes/base_tile_map_layer.tscn" id="2_bo1nx"]
 [ext_resource type="Texture2D" uid="uid://q76cst8tenyu" path="res://assets/images/TileMap/Farm_Craft_A2_DEMO.png" id="2_jjvhh"]
 [ext_resource type="Texture2D" uid="uid://d2xftshpuk3hi" path="res://assets/images/TileMap/Farm_Craft_B_DEMO.png" id="3_kry3j"]
+[ext_resource type="PackedScene" uid="uid://kengljxhl5wl" path="res://Scenes/rock.tscn" id="6_6bp64"]
 [ext_resource type="PackedScene" uid="uid://blk60tu0ubjsv" path="res://Scenes/Objects/new_flower.tscn" id="6_21xkr"]
+[ext_resource type="PackedScene" uid="uid://63250qdnrc47" path="res://Scenes/flower_spawing.tscn" id="7_6bp64"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6bp64"]
 texture = ExtResource("3_kry3j")
@@ -165,3 +167,14 @@ scale = Vector2(1, 1)
 y_sort_enabled = true
 position = Vector2(238, 78)
 scale = Vector2(1, 1)
+
+[node name="ROCK" parent="." unique_id=772277984 instance=ExtResource("6_6bp64")]
+position = Vector2(278, 94)
+
+[node name="ROCK2" parent="." unique_id=1575265699 instance=ExtResource("6_6bp64")]
+position = Vector2(96, 86)
+
+[node name="ROCK3" parent="." unique_id=1148305170 instance=ExtResource("6_6bp64")]
+position = Vector2(178, 31)
+
+[node name="Flower Spawing" parent="." unique_id=316677513 instance=ExtResource("7_6bp64")]
