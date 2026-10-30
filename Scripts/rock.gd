@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 class_name Rock
-@onready var hitBox : Area2D = $Area2D
+@onready var hitBox : Area2D = $RockHarvest
 @onready var Help_text: Label = $Label
 var harvestable = false 
 var Areabody : String
@@ -40,11 +40,7 @@ func _process(delta: float) -> void:
 	
 
 
-func _on_area_2d_area_entered(area: Area2D) -> void:
-	#print(area)
-	Areabody =str(area)
-	if "Interactio_Area" in Areabody:
-		harvestable = true
+
 	
 	
 	
@@ -60,5 +56,6 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	print(body)
 	Areabody =str(body)
 	if "Player" in Areabody:
+		harvestable = true
 		player = body
 		print(player)

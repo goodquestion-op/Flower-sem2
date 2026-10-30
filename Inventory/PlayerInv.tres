@@ -1,49 +1,49 @@
 [gd_resource type="Resource" script_class="Inv" format=3 uid="uid://bypc3qx7tfysx"]
 
-[ext_resource type="Script" uid="uid://dlpf0wan2qqg3" path="res://Inv_slot.gd" id="2_0wjt5"]
+[ext_resource type="Script" uid="uid://dlpf0wan2qqg3" path="res://Scripts/Inv_slot.gd" id="2_1ysss"]
 [ext_resource type="Script" uid="uid://r2bulidoec1m" path="res://Inventory/inventory.gd" id="3_ddl2c"]
 
-[sub_resource type="Resource" id="Resource_20w12"]
-script = ExtResource("2_0wjt5")
-metadata/_custom_type_script = "uid://dlpf0wan2qqg3"
-
 [sub_resource type="Resource" id="Resource_t7ayl"]
-script = ExtResource("2_0wjt5")
+script = ExtResource("2_1ysss")
 metadata/_custom_type_script = "uid://dlpf0wan2qqg3"
 
 [sub_resource type="Resource" id="Resource_hyv8y"]
-script = ExtResource("2_0wjt5")
+script = ExtResource("2_1ysss")
 metadata/_custom_type_script = "uid://dlpf0wan2qqg3"
 
 [sub_resource type="Resource" id="Resource_l28v0"]
-script = ExtResource("2_0wjt5")
+script = ExtResource("2_1ysss")
+metadata/_custom_type_script = "uid://dlpf0wan2qqg3"
+
+[sub_resource type="Resource" id="Resource_20w12"]
+script = ExtResource("2_1ysss")
 metadata/_custom_type_script = "uid://dlpf0wan2qqg3"
 
 [sub_resource type="Resource" id="Resource_4aqo6"]
-script = ExtResource("2_0wjt5")
+script = ExtResource("2_1ysss")
 metadata/_custom_type_script = "uid://dlpf0wan2qqg3"
 
 [sub_resource type="Resource" id="Resource_3esfb"]
-script = ExtResource("2_0wjt5")
+script = ExtResource("2_1ysss")
 metadata/_custom_type_script = "uid://dlpf0wan2qqg3"
 
 [sub_resource type="Resource" id="Resource_jua4q"]
-script = ExtResource("2_0wjt5")
+script = ExtResource("2_1ysss")
 metadata/_custom_type_script = "uid://dlpf0wan2qqg3"
 
 [sub_resource type="Resource" id="Resource_mj13q"]
-script = ExtResource("2_0wjt5")
+script = ExtResource("2_1ysss")
 metadata/_custom_type_script = "uid://dlpf0wan2qqg3"
 
 [sub_resource type="Resource" id="Resource_v63jk"]
-script = ExtResource("2_0wjt5")
+script = ExtResource("2_1ysss")
 metadata/_custom_type_script = "uid://dlpf0wan2qqg3"
 
 [sub_resource type="Resource" id="Resource_s1sf4"]
-script = ExtResource("2_0wjt5")
+script = ExtResource("2_1ysss")
 metadata/_custom_type_script = "uid://dlpf0wan2qqg3"
 
 [resource]
 script = ExtResource("3_ddl2c")
-slots = Array[ExtResource("2_0wjt5")]([SubResource("Resource_20w12"), SubResource("Resource_t7ayl"), SubResource("Resource_hyv8y"), SubResource("Resource_l28v0"), SubResource("Resource_4aqo6"), SubResource("Resource_3esfb"), SubResource("Resource_jua4q"), SubResource("Resource_mj13q"), SubResource("Resource_v63jk"), SubResource("Resource_s1sf4")])
+slots = Array[ExtResource("2_1ysss")]([SubResource("Resource_t7ayl"), SubResource("Resource_hyv8y"), SubResource("Resource_l28v0"), SubResource("Resource_20w12"), SubResource("Resource_4aqo6"), SubResource("Resource_3esfb"), SubResource("Resource_jua4q"), SubResource("Resource_mj13q"), SubResource("Resource_v63jk"), SubResource("Resource_s1sf4")])
 metadata/_custom_type_script = "uid://r2bulidoec1m"

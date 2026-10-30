@@ -17,10 +17,10 @@ func _input(event: InputEvent) -> void:
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if harvestable == true:
 		harvestable = false
-	#print("leaving:",body) 
+	print("leaving:",body) 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	#print("entering:",body)
+	print("entering:",body)
 	BODY = str(body)
 	if "New flower" in BODY:
 		#print("Touching Flower :) ")

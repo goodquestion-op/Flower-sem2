@@ -38,13 +38,7 @@ func _process(delta: float) -> void:
 		
 	 
 	
-
-
-func _on_area_2d_area_entered(area: Area2D) -> void:
-	#print(area)
-	Areabody =str(area)
-	if "Interactio_Area" in Areabody:
-		harvestable = true
+		
 	
 	
 	
@@ -54,6 +48,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 func _on_area_2d_area_exited(area: Area2D) -> void:
 	if harvestable == true:
 		harvestable = false
+	#print(area)
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
@@ -62,4 +57,5 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if "Player" in Areabody:
 		player = body
 		print(player)
+		harvestable = true
 	
